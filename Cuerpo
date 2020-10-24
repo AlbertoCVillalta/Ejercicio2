@@ -1,0 +1,34 @@
+class Ingresos():
+    def __init__(self):
+        self.ListaIngresos = []
+        self.idCounter = 0
+
+    def Ingreso(self, ingresador, monto):
+        self.idCounter += 1
+        transaccionId = self.idCounter
+        tranId = self.idCounter
+        transaccionDic = {"Su id es: ": transaccionId, "tipo abono: ": ingresador, "monto: ": monto}
+        transaccionDic2 ={"Su id es: ": tranId, "tipo abono: ": ingresador, "monto: ": monto}
+        self.ListaIngresos.append(transaccionDic2)
+        return transaccionDic
+
+    def Ingresos(self):
+        return self.ListaIngresos
+
+class Egresos():
+    def _init_(self):
+        self.ListaEgresos = []
+        self.idCounter = 0
+
+    def Egreso(self, retirante, monto):
+        self.idCounter += 1
+        transaccionId = self.idCounter
+        tranId = self.idCounter
+        transaccionDict = {"id": transaccionId, "tituloRetiro": retirante, "monto": monto}
+        transaccionDict2 = {"id": tranId, "tituloRetiro": retirante, "monto": monto}
+        self.ListaEgresos.append(transaccionDict2)
+        return transaccionDict
+
+    
+    def Egresos(self):
+        return self.listaEgresos
